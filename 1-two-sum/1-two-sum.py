@@ -7,12 +7,15 @@
                 
                 
                 
-#[2,7,11,15], target = 9
-class Solution:
+
+class Solution(object):
     def twoSum(self, nums, target):
-        hashmap = {}
-        for i in range(len(nums)):
-            complement = target - nums[i]
-            if complement in hashmap:
-                return [i, hashmap[complement]]
-            hashmap[nums[i]] = i
+        table = {}
+
+        for i, num in enumerate(nums):
+            complement = target - num
+            if complement in table:
+                return [i, table[complement]]
+            else:
+                table[num] = i
+
