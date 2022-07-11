@@ -9,12 +9,7 @@ class Solution:
         #     if l.pop(0) != l.pop():
         #         return False
         # return True
-
-    
-        if l == l[::-1]:
-            return True
-        else:
-            return False
-
+        return l == l[::-1]
+ 
         
         
