@@ -5,10 +5,16 @@ class Solution:
             if i.isalnum():
                 l.append(i.lower())
                
-        while len(l) > 1:
-            if l.pop(0) != l.pop():
-                return False
-        return True
+        # while len(l) > 1:
+        #     if l.pop(0) != l.pop():
+        #         return False
+        # return True
+        j=l.copy()
+        j.reverse()
+        if l == j:
+            return True
+        else:
+            return False
 
         
         
