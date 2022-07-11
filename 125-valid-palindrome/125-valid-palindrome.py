@@ -5,13 +5,10 @@ class Solution:
             if i.isalnum():
                 l.append(i.lower())
                
- 
-        j=l.copy()
-        j.reverse()
-        if l == j:
-            return True
-        else:
-            return False
-        l = []
+        while len(l) > 1:
+            if l.pop(0) != l.pop():
+                return False
+        return True
+
         
         
