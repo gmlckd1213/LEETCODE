@@ -9,9 +9,9 @@ class Solution:
         #     if l.pop(0) != l.pop():
         #         return False
         # return True
-        j=l.copy()
-        j.reverse()
-        if l == j:
+
+    
+        if l == l[::-1]:
             return True
         else:
             return False
