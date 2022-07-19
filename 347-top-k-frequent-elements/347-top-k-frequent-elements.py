@@ -6,5 +6,5 @@ class Solution:
             answer.append(freqs[i][0])
 
 
-                
+
         return answer
