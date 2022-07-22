@@ -9,13 +9,8 @@ class Solution:
             result = []
             for i in digits:
                 result.append(dial[i])
-            if len(result)==2:
-                a=product(result[0],result[1])
-            elif len(result)==3:
-                a=product(result[0],result[1],result[2])
-            elif len(result)==4:
-                a=product(result[0],result[1],result[2],result[3])
-                
+
+            a=product(*result)
             
             t=[]
             for i in a:
