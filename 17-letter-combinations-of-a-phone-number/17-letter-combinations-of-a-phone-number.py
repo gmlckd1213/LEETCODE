@@ -9,6 +9,5 @@ class Solution:
             result = []
             for i in digits:
                 result.append(dial[i])
-            a=product(*result)
             t = ["".join(i) for i in product(*result) ]
         return t
