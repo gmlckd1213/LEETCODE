@@ -15,6 +15,8 @@ class Solution:
                 a=product(result[0],result[1],result[2])
             elif len(result)==4:
                 a=product(result[0],result[1],result[2],result[3])
+                
+            
             t=[]
             for i in a:
                 t.append("".join(i))
