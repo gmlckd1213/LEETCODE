@@ -3,10 +3,16 @@ class Solution:
         if sum(gas) < sum(cost):
             return -1
         start, fuel = 0,0
+        # for i in range(len(gas)):
+        #     fuel += gas[i] - cost[i]
+        #     if fuel < 0:
+        #         start, fuel = i+1, 0
+        # return start
         for i in range(len(gas)):
-            fuel += gas[i] - cost[i]
-            if fuel < 0:
+            if gas[i] + fuel<cost[i]:
                 start, fuel = i+1, 0
+            else:
+                fuel +=gas[i] - cost[i]
         return start
     
 
