@@ -9,3 +9,4 @@ class Solution:
                 child+=1
             cookie+=1
         return child
+    #시간복잡도 O(log(n))
