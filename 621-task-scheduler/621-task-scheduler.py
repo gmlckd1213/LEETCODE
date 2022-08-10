@@ -15,3 +15,5 @@ class Solution:
             result += n - sub_count + 1
         
         return result
+    
+    #시간복잡도 O(nlog(n))
